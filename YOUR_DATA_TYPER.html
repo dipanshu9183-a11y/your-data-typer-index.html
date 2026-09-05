@@ -1,0 +1,693 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YOUR DATA TYPER | Professional Data Entry</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#172033;
+}
+
+header{
+    background:linear-gradient(135deg,#111827,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:45px;
+    margin:0 0 12px;
+    letter-spacing:1px;
+}
+
+header p{
+    font-size:18px;
+    color:#dbeafe;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:22px;
+    padding:14px 25px;
+    background:white;
+    color:#1d4ed8;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 3px 12px #0001;
+}
+
+nav a{
+    text-decoration:none;
+    color:#172033;
+    font-weight:bold;
+    margin:0 12px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 18px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:30px 22px;
+    text-align:center;
+    box-shadow:0 6px 22px #0001;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:48px;
+}
+
+.card h3{
+    margin:14px 0 8px;
+}
+
+.card p{
+    color:#64748b;
+    line-height:1.5;
+}
+
+.price{
+    font-size:30px;
+    font-weight:bold;
+    color:#1d4ed8;
+    margin:18px 0;
+}
+
+button{
+    border:0;
+    border-radius:10px;
+    padding:13px 22px;
+    background:#2563eb;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.step{
+    background:white;
+    padding:23px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 18px #0001;
+}
+
+.step-number{
+    font-size:32px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.order{
+    margin-top:50px;
+    background:white;
+    border-radius:18px;
+    padding:32px;
+    box-shadow:0 6px 22px #0001;
+}
+
+label{
+    display:block;
+    margin:17px 0 7px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #cbd5e1;
+    border-radius:9px;
+    font-size:15px;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.payment{
+    margin-top:25px;
+    background:#eff6ff;
+    border:1px solid #bfdbfe;
+    border-radius:13px;
+    padding:22px;
+}
+
+.payment h3{
+    color:#1e3a8a;
+    margin-top:0;
+}
+
+.total{
+    background:#172554;
+    color:white;
+    border-radius:10px;
+    padding:17px;
+    line-height:1.8;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.upi{
+    background:white;
+    border-radius:9px;
+    padding:15px;
+    margin:15px 0;
+    font-size:17px;
+}
+
+.note{
+    color:#475569;
+    font-size:14px;
+    line-height:1.5;
+}
+
+footer{
+    background:#111827;
+    color:#cbd5e1;
+    text-align:center;
+    padding:35px 15px;
+    margin-top:50px;
+}
+
+footer strong{
+    color:white;
+}
+
+@media(max-width:800px){
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+}
+
+@media(max-width:500px){
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    nav a{
+        margin:0 5px;
+        font-size:13px;
+    }
+
+    .order{
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>YOUR DATA TYPER</h1>
+
+<p>Accurate • Fast • Reliable Data Entry Services</p>
+
+<a href="#services" class="hero-btn">
+View Services
+</a>
+
+</header>
+
+<nav>
+
+<a href="#services">Services</a>
+<a href="#how">How It Works</a>
+<a href="#order">Order Now</a>
+
+</nav>
+
+<div class="container">
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<!-- SERVICE 1 -->
+
+<div class="card">
+
+<div class="icon">📄</div>
+
+<h3>PDF → Excel</h3>
+
+<p>
+Convert PDF documents into clean and organized Excel spreadsheets.
+</p>
+
+<div class="price">₹200</div>
+
+<button onclick="chooseService('PDF → Excel',200)">
+Order Now
+</button>
+
+</div>
+
+<!-- SERVICE 2 -->
+
+<div class="card">
+
+<div class="icon">🖼️</div>
+
+<h3>Image → Excel</h3>
+
+<p>
+Convert information from images into an organized Excel file.
+</p>
+
+<div class="price">₹250</div>
+
+<button onclick="chooseService('Image → Excel',250)">
+Order Now
+</button>
+
+</div>
+
+<!-- SERVICE 3 -->
+
+<div class="card">
+
+<div class="icon">📋</div>
+
+<h3>Contact List → Excel</h3>
+
+<p>
+Organize names, phone numbers and contact information into Excel.
+</p>
+
+<div class="price">₹300</div>
+
+<button onclick="chooseService('Contact List → Excel',300)">
+Order Now
+</button>
+
+</div>
+
+<!-- SERVICE 4 -->
+
+<div class="card">
+
+<div class="icon">🖼️</div>
+
+<h3>Image → Word</h3>
+
+<p>
+Convert text and information from images into a clean Word document.
+</p>
+
+<div class="price">₹250</div>
+
+<button onclick="chooseService('Image → Word',250)">
+Order Now
+</button>
+
+</div>
+
+<!-- SERVICE 5 -->
+
+<div class="card">
+
+<div class="icon">📄</div>
+
+<h3>PDF → Word</h3>
+
+<p>
+Convert PDF documents into editable and properly formatted Word files.
+</p>
+
+<div class="price">₹200</div>
+
+<button onclick="chooseService('PDF → Word',200)">
+Order Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section id="how" style="margin-top:60px;">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Choose</h3>
+<p>Select your required service.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Upload</h3>
+<p>Upload your work file and give instructions.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Pay</h3>
+<p>Pay the 50% advance through UPI.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Receive</h3>
+<p>Get the completed work after processing.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ORDER -->
+
+<section id="order" class="order">
+
+<h2>Place Your Order</h2>
+
+<form
+action="https://formsubmit.co/DIPANSHU9183@GMAIL.COM"
+method="POST"
+enctype="multipart/form-data"
+>
+
+<input
+type="hidden"
+name="_subject"
+value="NEW ORDER - YOUR DATA TYPER"
+>
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+<input
+type="hidden"
+name="_captcha"
+value="true"
+>
+
+<label>Service *</label>
+
+<select id="service" name="Service" onchange="updatePrice()" required>
+
+<option value="PDF → Excel|200">
+PDF → Excel — ₹200
+</option>
+
+<option value="Image → Excel|250">
+Image → Excel — ₹250
+</option>
+
+<option value="Contact List → Excel|300">
+Contact List → Excel — ₹300
+</option>
+
+<option value="Image → Word|250">
+Image → Word — ₹250
+</option>
+
+<option value="PDF → Word|200">
+PDF → Word — ₹200
+</option>
+
+</select>
+
+<label>Your Name *</label>
+
+<input
+type="text"
+name="Name"
+placeholder="Enter your full name"
+required
+>
+
+<label>Your Email *</label>
+
+<input
+type="email"
+name="email"
+placeholder="Enter your email"
+required
+>
+
+<label>WhatsApp Number</label>
+
+<input
+type="tel"
+name="WhatsApp"
+placeholder="Enter WhatsApp number"
+>
+
+<label>Upload Work File *</label>
+
+<input
+type="file"
+name="attachment"
+accept=".pdf,.jpg,.jpeg,.png,.webp,.csv,.xlsx,.xls,.doc,.docx,.txt"
+required
+>
+
+<p class="note">
+Maximum total file size supported by the form service is 10 MB.
+</p>
+
+<label>Work Details *</label>
+
+<textarea
+name="Work_Details"
+placeholder="Explain what you need..."
+required
+></textarea>
+
+<!-- PAYMENT -->
+
+<div class="payment">
+
+<h3>💳 50% Advance Payment</h3>
+
+<div class="total" id="paymentInfo">
+
+Total: ₹200
+<br>
+50% Advance: ₹100
+
+</div>
+
+<div class="upi">
+
+<strong>UPI ID</strong>
+
+<br><br>
+
+9711489144@FAM
+
+</div>
+
+<button
+type="button"
+onclick="payUPI()"
+>
+💳 Pay Advance
+</button>
+
+<p class="note">
+
+1. Click "Pay Advance".<br>
+2. Complete the UPI payment.<br>
+3. Enter your transaction/UTR number below.<br>
+4. Submit your order.
+
+</p>
+
+</div>
+
+<label>Transaction / UTR Number *</label>
+
+<input
+type="text"
+name="Transaction_UTR"
+placeholder="Enter UPI transaction number"
+required
+>
+
+<br><br>
+
+<button
+type="submit"
+style="width:100%;font-size:17px;"
+>
+📩 Submit Order
+</button>
+
+</form>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+<strong>YOUR DATA TYPER</strong>
+</p>
+
+<p>
+Accurate & Simple Data Entry Services
+</p>
+
+<p>
+📧 DIPANSHU9183@GMAIL.COM
+</p>
+
+<p>
+© 2026 YOUR DATA TYPER
+</p>
+
+</footer>
+
+<script>
+
+/* SELECT SERVICE */
+
+function chooseService(service,price){
+
+    document.getElementById("service").value =
+        service + "|" + price;
+
+    updatePrice();
+
+    document.getElementById("order")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+}
+
+
+/* UPDATE PAYMENT */
+
+function updatePrice(){
+
+    let value =
+        document.getElementById("service").value;
+
+    let parts = value.split("|");
+
+    let price = Number(parts[1]);
+
+    let advance = price / 2;
+
+    document.getElementById("paymentInfo").innerHTML =
+        "Total: ₹" + price +
+        "<br>50% Advance: ₹" + advance;
+}
+
+
+/* UPI PAYMENT */
+
+function payUPI(){
+
+    let value =
+        document.getElementById("service").value;
+
+    let parts = value.split("|");
+
+    let price = Number(parts[1]);
+
+    let advance = price / 2;
+
+    let upiLink =
+        "upi://pay" +
+        "?pa=9711489144@FAM" +
+        "&pn=YOUR%20DATA%20TYPER" +
+        "&am=" + advance +
+        "&cu=INR";
+
+    window.location.href = upiLink;
+}
+
+
+/* START */
+
+updatePrice();
+
+</script>
+
+</body>
+</html>
+```
